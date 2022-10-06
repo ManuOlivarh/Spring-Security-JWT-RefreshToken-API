@@ -1,0 +1,16 @@
+manuolivarh:
+  app:
+    jwtExpirationMs: 60000
+    jwtRefreshExpirationMs: 120000
+    jwtSecret: bezKoderSecretKey
+spring:
+  datasource:
+    password: mypass
+    url: jdbc:mysql://localhost:3306/testdb_spring?useSSL=false
+    username: admin
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
